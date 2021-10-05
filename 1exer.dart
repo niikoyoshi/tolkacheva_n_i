@@ -1,4 +1,11 @@
 import 'dart:io';
+
 void main() {
-  var age = int.parse(stdin.readLineSync());
+  List<int> input = [];
+  stdin.readLineSync()!.split(' ').forEach((element) {
+    input.add(int.parse(element));
+  });
+
+  print(input[0] + input[1]);
 }
+
