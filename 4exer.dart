@@ -5,16 +5,20 @@ void main() {
   stdin.readLineSync()!.split(' ').forEach((element) {
     input.add(int.parse(element));
   });
+
   int a = input[0];
   int b = input[1];
   int k = 0;
+
   while (a > 0){
     if (a < b){
       break;
-    } else {
+    }
+    else {
       a -= b;
       k++;
     }
   }
-  print(k);
+
+  print(k.toString() + " " + a.toString());
 }
